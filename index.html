@@ -3,69 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Slumtotos-Africa</title>
-  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <title>The Slum Totos-africa</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff6b6b, #fddb3a, #1dd1a1, #5f27cd);
+      background-size: 400% 400%;
+      animation: gradientFlow 8s ease infinite;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      color: #fff;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px #ffffffaa, 0 0 20px #ffffff55;
+      animation: fadeinout 5s ease-in-out;
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes fadeinout {
+      0% { opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
 </head>
 <body>
+  <div class="logo">The Slum Totos-africa</div>
 
-  <header class="main-header">
-    <div class="logo">THE SLUM TOTOS<span>-AFRICA</span></div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#checkout">Checkout</a>
-    </nav>
-    <div id="search-bar" class="header-search">
-  <input type="text" id="search" placeholder="Search West African Fashion..." />
-</div>
-
-<div class="cart-display">
-  🛒 <span id="cart-count" class="cart-count">0</span>
-</div>
-<!-- 🛒 CART SIDEBAR -->
-<div id="cart-sidebar">
-  <div class="cart-header">
-    <h2>Your Cart</h2>
-    <button id="close-cart">×</button>
-  </div>
-  <div id="cart-items"></div>
-  <div id="cart-summary">
-    <strong>Total:</strong> <span id="cart-total">KES 0</span>
-  </div>
-</div>
-
-  </header>
-
-
-  <section id="category-filters">
-    <button onclick="filter('All')">All</button>
-    <button onclick="filter('Kente')">Kente</button>
-    <button onclick="filter('Agbada')">Agbada</button>
-    <button onclick="filter('Ankara')">Ankara</button>
-  </section>
-
-  <main>
-    <div id="product-list" class="grid"></div>
-  </main>
-
-  <div id="cart-sidebar">
-    <div class="cart-header">
-      <h2>Your Cart</h2>
-      <button id="close-cart">×</button>
-    </div>
-    <div id="cart-items"></div>
-    <div id="cart-summary">
-      <strong>Total:</strong> <span id="cart-total">KES 0</span>
-    </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Slumtotos-Africa – Built in Kenya, Styled in West Africa.</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <script>
+    setTimeout(() => {
+      window.location.href = "slumtoto.html"; // Replace with your actual URL
+    }, 5000);
+  </script>
 </body>
 </html>
-
-
