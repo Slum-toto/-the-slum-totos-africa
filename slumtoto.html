@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Slumtotos-Africa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">THE SLUM TOTOS<span>-AFRICA</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html">Shop</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+    <div id="search-bar" class="header-search">
+  <input type="text" id="search" placeholder="Search West African Fashion..." />
+</div>
+
+<div class="cart-display">
+  🛒 <span id="cart-count" class="cart-count">0</span>
+</div>
+<!-- 🛒 CART SIDEBAR -->
+<div id="cart-sidebar">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="close-cart">×</button>
+  </div>
+  <div id="cart-items"></div>
+  <div id="cart-summary">
+    <strong>Total:</strong> <span id="cart-total">KES 0</span>
+  </div>
+</div>
+
+  </header>
+
+
+  <section id="category-filters">
+    <button onclick="filter('All')">All</button>
+    <button onclick="filter('Kente')">Kente</button>
+    <button onclick="filter('Agbada')">Agbada</button>
+    <button onclick="filter('Ankara')">Ankara</button>
+  </section>
+
+  <main>
+    <div id="product-list" class="grid"></div>
+  </main>
+
+  <div id="cart-sidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="close-cart">×</button>
+    </div>
+    <div id="cart-items"></div>
+    <div id="cart-summary">
+      <strong>Total:</strong> <span id="cart-total">KES 0</span>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Slumtotos-Africa – Built in Kenya, Styled in West Africa.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
